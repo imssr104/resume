@@ -2,9 +2,18 @@ body{
     /* background: #ACDBD8;
     background: linear-gradient(90deg, #ACDBD8, #F8F8F8); */
     background-color: rgb(222 234 246);
+
+    border: 8px solid black;
 }
 
-.name{
+.name-heading{
     font-family: 'Calibri Light';
-    
+    text-align: center;
+    font-size: 48px;
+}
+
+.name-sub-heading{
+    font-family: 'Calibri Light';
+    text-align: center;
+    font-size: 36px;
 }
