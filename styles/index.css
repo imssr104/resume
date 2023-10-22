@@ -1,18 +1,46 @@
-body{
-    /* background: #ACDBD8;
-    background: linear-gradient(90deg, #ACDBD8, #F8F8F8); */
-    background-color: rgb(222 234 246);
-    border: 8px solid black;
+body {
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #F4EEFF, #DCD6F7, #A6B1E1, #424874);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	/* height: 100vh; */
+    font-family: 'Calibri Light';
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+        color: black;
+	}
+	50% {
+		background-position: 100% 50%;
+        color:darkblue;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 .name-heading{
-    font-family: 'Calibri Light';
     text-align: center;
     font-size: 48px;
 }
 
 .name-sub-heading{
-    font-family: 'Calibri Light';
     text-align: center;
     font-size: 36px;
+}
+
+.skills .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.internship .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 2px solid black;
 }
